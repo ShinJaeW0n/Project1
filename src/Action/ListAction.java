@@ -92,17 +92,6 @@ public class ListAction implements Action{
 		request.setAttribute("listCount", listCount);
 		request.setAttribute("articleList", articleList);
 		
-		try {
-			endPage = (startPage+pageLength)-1;
-			startPage = (currentBlock-1)*pageLength+1;
-//			System.out.println("startPage의 값은?"+startPage);
-//			System.out.println("endPage의 값은?"+endPage);
-//			System.out.println("cPage의 값은?"+cPage);
-		} catch (Exception e) {
-//			System.out.println("startPage의 값은?"+startPage);
-///			System.out.println("endPage의 값은?"+endPage);
-		}
-		
 		forward.setRedirect(false);
 		forward.setPath("eventReview.jsp");
 		
