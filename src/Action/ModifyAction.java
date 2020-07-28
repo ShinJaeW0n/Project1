@@ -48,11 +48,11 @@ public class ModifyAction implements Action{
 			//파라미터 값을 자바빈에 세팅한다.
 			BbsBean bean = new BbsBean();
 			bean.setSeq(pageNum);
-			System.out.println("글번호 값은? : " + pageNum);
+//			System.out.println("글번호 값은? : " + pageNum);
 			bean.setTitle(title);
-			System.out.println("타이틀 값은? : " + title);
+//			System.out.println("타이틀 값은? : " + title);
 			bean.setContent(content);
-			System.out.println("content 값은? : " + content);
+//			System.out.println("content 값은? : " + content);
 			
 			
 			//글 수정시 업로드 된 파일 가져오기
